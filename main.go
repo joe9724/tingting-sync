@@ -12,7 +12,7 @@ func main() {
 	RunTimer()
 }
 func RunTimer() {
-	GetDashboardTimer := time.NewTicker(10 * time.Second)
+	GetDashboardTimer := time.NewTicker(60 * time.Second)
 	for {
 		select {
 		case <-GetDashboardTimer.C:
